@@ -1,16 +1,16 @@
-def letra (n)
+def letra_o (n)
     n.times do |i|
         print "*"
     end
     print "\n"
-    (n  2).times do |i| 
+    (n - 2).times do |i| 
         n.times do |j|
             if j == 1 + 1
-                print "*"
+                print " "
             elsif j == 0 || j == 4
                 print "*"
             else
-                print " "
+                print " " 
             end
         end
         print "\n"
@@ -21,5 +21,5 @@ def letra (n)
     print "\n"
 end
 
-letra (5) 
+letra_o(5) 
 print "\n"
