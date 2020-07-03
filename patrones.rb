@@ -121,3 +121,43 @@ def letra_x(n)
 letra_x(5) 
 print "\n"
 #Fin d. Método letra_x(n)
+
+#Comienzo e. Método numero_cero(n)
+def numero_cero (n) 
+    n.times do |i|
+        print "*"
+    end
+    print "\n"
+    (n - 2).times do |i| 
+        n.times do |j|
+            if j == 1 + 1
+                print " "
+            elsif j == 0 || j == 4
+                print "*"
+            else
+                print " " 
+            end
+        end
+        print "\n"
+    end
+    n.times do |i|
+        print "*"
+    end
+    print "\n"
+end
+
+numero_cero(5) 
+print "\n"
+#Fin e. Método numero_cero(n)
+
+#Comienzo f. Método navidad(n)
+def navidad(height)
+    height.times {|n|
+      print ' ' * (height - n)
+      puts '*' * (2 * n + 1)
+    }
+  end
+
+navidad(4) 
+print "\n"
+#Fin f. Método Navidad(n)
